@@ -1,0 +1,90 @@
+
+.message {
+    background-color: #94d8f6;
+    width: 330px;
+    height: 75px;
+    border-color: black;
+    display: grid;
+
+    grid-template-areas:
+    "i c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    border-radius: 3%;
+}
+
+.image {
+    grid-area: i;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+
+
+}
+
+.content {
+    grid-area: c;
+    background-color: cornflowerblue;
+    width: 260px;
+    height: 65px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 0;
+
+    display: grid;
+
+    grid-template-areas:
+    "na na"
+    "t ti";
+    grid-template-rows: 15px 1fr;
+    grid-template-columns:  3fr 1fr;
+    grid-gap: 10px;
+
+
+}
+
+.name {
+    grid-area: na;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #154a62;
+
+
+}
+
+.text {
+    grid-area: t;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: antiquewhite;
+
+
+}
+
+.time {
+    grid-area: ti;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 600;
+    color: darkslateblue;
+
+}
+
+.hack {
+    width: 65px;
+    height: 70px;
+    border-bottom-right-radius: 25%;
+    background-color: #94d8f6;
+
+}
+
+.empty {
+    width: 65px;
+    height: 70px;
+    background-color: cornflowerblue;
+
+}
