@@ -12,12 +12,16 @@ const messageData = {
 function HW1() {
     return (
         <>
+            <hr/>
+            homeworks 1
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
+
             />
+            <hr/>
 
         </>
     )
