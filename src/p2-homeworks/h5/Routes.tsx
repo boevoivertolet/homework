@@ -1,7 +1,7 @@
 import React from 'react'
-import {Redirect, Route, Switch} from 'react-router-dom';
-import PreJunior from './pages/PreJunior';
-import Error404 from './pages/Error404';
+import { Routes ,Route } from 'react-router-dom';
+import Error404 from '../h5-rrd-v6/pages/Error404';
+import PreJunior from '../h5-rrd-v6/pages/PreJunior';
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -12,7 +12,7 @@ function Routes() {
     return (
         <div>
             Switch выбирает первый подходящий роут
-            <Switch>
+            <Routes >
 
             в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR
             exact нужен чтоб указать полное совподение (что после '/' ничего не будет)
@@ -24,7 +24,7 @@ function Routes() {
             у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу
             <Route render={() => <Error404/>}/>
 
-            </Switch>
+            </Routes >
         </div>
     )
 }
