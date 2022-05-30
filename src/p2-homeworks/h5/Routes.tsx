@@ -1,7 +1,5 @@
 import React from 'react'
-import { Routes ,Route } from 'react-router-dom';
-import Error404 from '../h5-rrd-v6/pages/Error404';
-import PreJunior from '../h5-rrd-v6/pages/PreJunior';
+
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -11,7 +9,7 @@ export const PATH = {
 function Routes() {
     return (
         <div>
-            Switch выбирает первый подходящий роут
+       {/*     Switch выбирает первый подходящий роут
             <Routes >
 
             в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR
@@ -24,7 +22,7 @@ function Routes() {
             у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу
             <Route render={() => <Error404/>}/>
 
-            </Routes >
+            </Routes >*/}
         </div>
     )
 }
