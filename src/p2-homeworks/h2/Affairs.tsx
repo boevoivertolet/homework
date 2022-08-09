@@ -3,11 +3,11 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (filter: FilterType) => void
     deleteAffairCallback: (id: number) => void
-    filter :FilterType
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -37,12 +37,12 @@ function Affairs(props: AffairsPropsType) {
         props.setFilter(e.currentTarget.value as FilterType)
 
     }
-    const cnAll =s.button+' '+(props.filter==='all'? s.active: '')
-    const cnHigh =s.button+' '+(props.filter==='high'? s.active: '')
-    const cnMiddle =s.button+' '+(props.filter==='middle'? s.active: '')
-    const cnLow =s.button+' '+(props.filter==='low'? s.active: '')
-    const serClass =(filter:FilterType) => {
-        return s.button +(props.filter === filter ? ' '+ s.active: '')
+    const cnAll = s.button + ' ' + (props.filter === 'all' ? s.active : '')
+    const cnHigh = s.button + ' ' + (props.filter === 'high' ? s.active : '')
+    const cnMiddle = s.button + ' ' + (props.filter === 'middle' ? s.active : '')
+    const cnLow = s.button + ' ' + (props.filter === 'low' ? s.active : '')
+    const serClass = (filter: FilterType) => {
+        return s.button + (props.filter === filter ? ' ' + s.active : '')
     }
 
     return (
@@ -53,7 +53,7 @@ function Affairs(props: AffairsPropsType) {
             <button onClick={setAll} className={cnAll}>All</button>
             <button onClick={setHigh} className={cnHigh}>High</button>
             <button onClick={setMiddle} className={cnMiddle}>Middle</button>
-            <button onClick={setLow}className={cnLow}>Low</button>
+            <button onClick={setLow} className={cnLow}>Low</button>
         </div>
     )
 }

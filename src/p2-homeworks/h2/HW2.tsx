@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
 
-// types
-export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
+
+export type AffairPriorityType = 'high' | 'low' | 'middle'
 
 
 
@@ -11,8 +11,7 @@ export type AffairType = {
     _id: number,
     name: string,
     priority: AffairPriorityType
-} // need to fix any
-
+}
 
 
 export type FilterType = 'all' | AffairPriorityType
@@ -20,7 +19,7 @@ export type FilterType = 'all' | AffairPriorityType
 
 
 // constants
-const defaultAffairs: Array<AffairType> = [ // need to fix any
+const defaultAffairs: Array<AffairType> = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},

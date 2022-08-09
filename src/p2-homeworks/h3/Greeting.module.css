@@ -1,7 +1,16 @@
-.someClass {
+.greeting {
 
+    align-items: flex-start;
 }
 
 .error {
-    border: 1px solid red;
+    color: red;
+    height: 22px;
+
+}
+
+.errorInput {
+
+    border: 2px solid red;
+    outLine: none;
 }
